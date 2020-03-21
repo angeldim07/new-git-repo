@@ -11,7 +11,9 @@ int* create_int(int value) {
     return p;
 }
 
-int main() {
+//test της create_int στην main
+
+int main(void) {
     int a = 1;
     printf ("Before, (long)&a = %ld\n",(long)&a);
     int* q = create_int(a);
