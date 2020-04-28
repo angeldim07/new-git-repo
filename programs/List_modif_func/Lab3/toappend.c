@@ -23,9 +23,11 @@ int* create_int(int value) {
 	return pointer;
 }
 
+
 int compare_ints(Pointer a,Pointer b) {
 	return *(int*)b - *(int*)a;
 }
+
 
 // Δημιουργεί μια λίστα με N στοιχεία. Αν array != NULL τότε εισάγονται τα στοιχεία του array, χωρίς destroy handler.
 // Αν array == NULL τότε εισάγονται οι αριθμοί 0..Ν-1 σε νέα μνήμη, με free σαν destroy handler.

@@ -9,7 +9,7 @@ int main() {
     int line = 0;
     char str[LENGTH];
     char* lines[WORDS];
-//    int same[WORDS] = {0};
+   int same[WORDS] = {0};
     fp = fopen("words-10","r");
     while (line<=9 /*|| !feof(fp)*/) {
         fgets(str,LENGTH,fp);

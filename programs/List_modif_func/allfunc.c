@@ -36,9 +36,11 @@ void list_reverse_insert_next(List list) {
 
 void list_print(List list) {
     //εκτύπωση λίστας απτην αρχή προς το τέλος
+	int i = 0;
     for(ListNode node = list_first(list);            
         node != LIST_EOF;                          
         node = list_next(list, node)) {
-		printf("%d\n",*(int*)list_node_value(list,node));
+		printf("node %d = %d\n",i,*(int*)list_node_value(list,node));
+		i++;
 	}
 }
